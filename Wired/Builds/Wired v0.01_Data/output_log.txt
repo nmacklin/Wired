@@ -1,0 +1,640 @@
+Initialize engine version: 5.0.2f1 (0b02744d4013)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560 Ti   (ID=0x1200)
+    Vendor:   NVIDIA
+    VRAM:     973 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.01_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.01_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.01_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.01_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.01_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.01_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.066 seconds
+desktop: 1920x1080 60Hz; virtual: 3280x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Shader 'Hidden/TerrainEngine/Splatmap/Specular-Base': fallback shader 'Legacy Shaders/Specular' not found
+Shader 'Hidden/TerrainEngine/Splatmap/Specular-Base': fallback shader 'Legacy Shaders/Specular' not found
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 514 -> priority: 1 
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++007 +000 -010
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10106
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++006 +000 -012
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10116
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++005 +000 -011
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10126
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++005 +000 -009
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10136
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++007 +000 -008
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10146
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++006 +000 -008
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10156
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++005 +000 -008
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10166
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++006 +000 -010
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10176
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++005 +000 -010
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10186
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++006 +000 -011
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10196
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++006 +000 -009
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10206
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++008 +000 -009
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10216
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++007 +000 -009
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10226
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++007 +000 -011
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10236
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++007 +000 -012
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10246
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Wire placed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:39)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
++005 +000 -012
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:40)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 40)
+
+-10256
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:41)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/RightClick.cs Line: 41)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Bare Copper Wire(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:18)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 18)
+
+Waiting for finish

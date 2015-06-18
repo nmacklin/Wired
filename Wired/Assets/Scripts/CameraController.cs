@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
     public Vector3 myPos;
-    public Transform myPlay;
+    public Transform player;
     public int lookSensitivity;
 
     public Texture2D cursorTexture;
@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour {
 
     void Start()
     {
+        // Lock cursor position to middle of screen with custom texture. 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
@@ -20,8 +21,11 @@ public class CameraController : MonoBehaviour {
 
     void Update()
     {
-        transform.position = myPlay.position + myPos;
+        // Tracks camera to player location.
+        transform.position = player.position + myPos;
+
+        // Rotates camera based on mouse movement and keeps z rotation at 0 to prevent "leaning" during rotation.
         transform.Rotate(Input.GetAxis("Mouse Y") * -1 * lookSensitivity, Input.GetAxis("Mouse X") * lookSensitivity, 0);
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0); 
     }
 }

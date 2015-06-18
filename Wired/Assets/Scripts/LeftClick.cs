@@ -14,12 +14,13 @@ public class LeftClick : MonoBehaviour {
 
     public void LeftClickHandler(RaycastHit hitInfo)
     {
-        placementRegister.CubeFinder(hitInfo);
+        string clickedCubeCoordinates = placementRegister.CubeFinder(hitInfo);
         Debug.Log(hitInfo.collider);
 
         if (hitInfo.collider.gameObject.tag == "Destructable")
         {
             Destroy(hitInfo.collider.gameObject);
+            placementRegister.integerCoordinates.Remove(clickedCubeCoordinates);
         }
     }
 }

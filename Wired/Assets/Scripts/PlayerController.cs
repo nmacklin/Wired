@@ -4,17 +4,22 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
     public float speed;
-    private Rigidbody rb;
     public Transform camera1;
+
+    private Rigidbody rb;
+    private RightClick rightClick;
+    private LeftClick leftClick;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rightClick = gameObject.GetComponent<RightClick>();
+        leftClick = gameObject.GetComponent<LeftClick>();
     }
 
     void FixedUpdate()
     {
-        transform.eulerAngles = new Vector3(0, camera1.eulerAngles.y, 0);
+        transform.eulerAngles = new Vector3(0, camera1.eulerAngles.y, 0); // Rotates player based on camera rotation in y plane only to keep movement parallel to ground.
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -26,6 +31,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
+        // Checks for right click and hands off clicked object (hitInfo) to RightClick.cs.
         if (Input.GetMouseButtonDown(1))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -35,11 +41,12 @@ public class PlayerController : MonoBehaviour {
 
             if (Physics.Raycast(ray, out hitInfo, 100)) //100 == max distance 
             {
-                RightClick rightClick = gameObject.GetComponent<RightClick>();
+                
                 rightClick.RightClickHandler(hitInfo);
             }
         }
 
+        // Checks for left click and hands off clicked object (hitInfo) to LeftClick.cs.
         if (Input.GetMouseButtonDown(0)) 
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -49,7 +56,6 @@ public class PlayerController : MonoBehaviour {
 
             if (Physics.Raycast(ray, out hitInfo, 100))
             {
-                LeftClick leftClick = gameObject.GetComponent<LeftClick>();
                 leftClick.LeftClickHandler(hitInfo);
             }
         }

@@ -5,24 +5,29 @@ using System.Collections.Generic;
 public class RightClick : MonoBehaviour {
 
     public GameObject terrain;
-    PlacementRegister placementRegister;
     public GameObject wire;
+
+    PlacementRegister placementRegister;
     string clickedCubeCoordinates;
 
     void Awake()
     {
+        // Gets PlacementRegister.cs script from terrain GameObject.
         placementRegister = terrain.GetComponent<PlacementRegister>();
     }
 
     public bool ValidPlacement()
     {
+        // Checks to see if object already registered in PlacementRegister at clicked integer coordinates.
         return !(placementRegister.integerCoordinates.ContainsKey(clickedCubeCoordinates));
     }
 
     public void RightClickHandler(RaycastHit hitInfo)
     {
+        // Creates string of clicked integer coordinates (see PlacementRegister.cs for method).
         clickedCubeCoordinates = placementRegister.CubeFinder(hitInfo);
 
+        // Instantiates GameObject at clicked coordinates and registers placement in PlacementRegister. 
         if (ValidPlacement())
         {
             Vector3 placementPosition = placementRegister.CoordinatesStringToVector(clickedCubeCoordinates);
