@@ -15,37 +15,37 @@ public class PlacementRegister : MonoBehaviour {
         integerCoordinates = new Dictionary<string, int>();
     }
 
-    public string CubeFinder(RaycastHit hitInfo)
+    public string CoordinatesVector3ToString(Vector3 vector3Coordinates)
     {
-        // Takes RaycastHit and converts Vector3 coordinates to string of format "+xxx +yyy +zzz".
+        // Converts Vector3 coordinates to string of format "+xxx +yyy +zzz".
         // This string is used as key in integerCoordinates dictionary. 
-        string clickedCubeCoordinates = "";
+        string stringCoordinates = "";
         for (int i = 0; i < 3; i++)
         {
-            float floatCoordinate = hitInfo.point[i];
+            float floatCoordinate = vector3Coordinates[i];
             int coordinate = Mathf.RoundToInt(floatCoordinate);
             if (coordinate >= 0)
             {
-                clickedCubeCoordinates += "+" + coordinate.ToString("D3");
+                stringCoordinates += "+" + coordinate.ToString("D3");
             }
             else
             {
-                clickedCubeCoordinates += coordinate.ToString("D3");
+                stringCoordinates += coordinate.ToString("D3");
             }
             if (i < 2)
             {
-                clickedCubeCoordinates += " ";
+                stringCoordinates += " ";
             }
         }
-        return clickedCubeCoordinates;
+        return stringCoordinates;
     }
 
-    public Vector3 CoordinatesStringToVector(string clickedCubeCoordinates)
+    public Vector3 CoordinatesStringToVector3(string stringCoordinates)
     {
         // Takes coordinate string and converts it to Vector3.
-        int xCoordinate = Int32.Parse(clickedCubeCoordinates.Substring(0, 4));
-        int yCoordinate = Int32.Parse(clickedCubeCoordinates.Substring(5, 4));
-        int zCoordinate = Int32.Parse(clickedCubeCoordinates.Substring(10, 4));
+        int xCoordinate = Int32.Parse(stringCoordinates.Substring(0, 4));
+        int yCoordinate = Int32.Parse(stringCoordinates.Substring(5, 4));
+        int zCoordinate = Int32.Parse(stringCoordinates.Substring(10, 4));
 
         Vector3 vector3Coordinates = new Vector3(xCoordinate, yCoordinate, zCoordinate);
 

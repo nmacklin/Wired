@@ -14,7 +14,8 @@ public class LeftClick : MonoBehaviour {
 
     public void LeftClickHandler(RaycastHit hitInfo)
     {
-        string clickedCubeCoordinates = placementRegister.CubeFinder(hitInfo);
+        // Checks if clicked collider is destructable, then destroys object and removes from Placement Register.
+        string clickedCubeCoordinates = placementRegister.CoordinatesVector3ToString(hitInfo.point);
         Debug.Log(hitInfo.collider);
 
         if (hitInfo.collider.gameObject.tag == "Destructable")
