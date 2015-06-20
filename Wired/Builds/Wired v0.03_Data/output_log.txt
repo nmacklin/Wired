@@ -1,0 +1,192 @@
+Mono path[0] = 'C:/Users/Nick/Unity Projects/Wired/Builds/Wired v0.03_Data/Managed'
+Mono path[1] = 'C:/Users/Nick/Unity Projects/Wired/Builds/Wired v0.03_Data/Mono'
+Mono config path = 'C:/Users/Nick/Unity Projects/Wired/Builds/Wired v0.03_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Nick/Unity Projects/Wired/Builds/Wired v0.03_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55178
+Multi-casting "[IP] 192.168.1.8 [Port] 55178 [Flags] 3 [Guid] 1343513470 [EditorId] 2074718799 [Version] 1048832 [Id] WindowsPlayer(Nick-PC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.1.8:55178]...
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56470
+PlayerConnection already initialized - listening to [192.168.1.8:55178]
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560 Ti   (ID=0x1200)
+    Vendor:   NVIDIA
+    VRAM:     973 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.067 seconds
+desktop: 1920x1080 60Hz; virtual: 3280x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Nick\Unity Projects\Wired\Builds\Wired v0.03_Data\Managed\System.dll (this message is harmless)
+Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: d4c -> priority: 1 
+Bare Copper Wire 1(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 1(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 2b(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 1(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 1(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Invalid placement at +000 +000 +001
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:48)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 108)
+
+Bare Copper Wire 4(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 4(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 4(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 4(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 2a(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Bare Copper Wire 2a(Clone) (UnityEngine.CapsuleCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
+Invalid placement at -002 +000 -003
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:108)
+RightClick:RightClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\RightClick.cs:48)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 108)
+
+Terrain (UnityEngine.TerrainCollider)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LeftClick:LeftClickHandler(RaycastHit) (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\LeftClick.cs:23)
+PlayerController:Update() (at C:\Users\Nick\Unity Projects\Wired\Assets\Scripts\PlayerController.cs:59)
+ 
+(Filename: C:/Users/Nick/Unity Projects/Wired/Assets/Scripts/LeftClick.cs Line: 23)
+
