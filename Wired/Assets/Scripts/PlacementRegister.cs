@@ -6,7 +6,7 @@ using System;
 public class PlacementRegister : MonoBehaviour {
 
     public Dictionary<string, int> coordinatesIDDictionary;
-    public Dictionary<int, UnityEngine.Object> placedObjectsDictionary;
+    public Dictionary<int, GameObject> idReferenceDictionary;
 
     void Awake()
     {
@@ -15,16 +15,16 @@ public class PlacementRegister : MonoBehaviour {
         // The second has Keys of those GameIDs (int) and Values of GameObject references.
         // These two dictionaries comprise the "Object Register".
         coordinatesIDDictionary = new Dictionary<string, int>();
-        placedObjectsDictionary = new Dictionary<int, UnityEngine.Object>();
+        idReferenceDictionary = new Dictionary<int, GameObject>();
     }
 
-    public void AddToObjectRegister(string coordinateString, UnityEngine.Object objectReference)
+    public void AddToObjectRegister(string coordinateString, GameObject objectReference)
     {
-        // Adds coordinate string, ObjectID to coordinatesIDDictionary and ObjectID, Object reference to placedObjectsDictionary.
+        // Adds coordinate string, ObjectID to coordinatesIDDictionary and ObjectID, Object reference to idReferenceDictionary.
         int objectID = objectReference.GetInstanceID();
 
         coordinatesIDDictionary.Add(coordinateString, objectID);
-        placedObjectsDictionary.Add(objectID, objectReference);
+        idReferenceDictionary.Add(objectID, objectReference);
     }
 
     public void RemoveFromObjectRegister(string coordinateString)
@@ -33,7 +33,15 @@ public class PlacementRegister : MonoBehaviour {
         int objectID = coordinatesIDDictionary[coordinateString];
 
         coordinatesIDDictionary.Remove(coordinateString);
-        placedObjectsDictionary.Remove(objectID);
+        idReferenceDictionary.Remove(objectID);
+    }
+
+    public GameObject ObjectLookupByCoordinateString(string coordinatesString)
+    {
+        // Gets object reference by coordinate string.
+        int objectID = coordinatesIDDictionary[coordinatesString];
+        GameObject objectRetrieved = idReferenceDictionary[objectID];
+        return objectRetrieved;
     }
 
     public string CoordinatesVector3ToString(Vector3 vector3Coordinates)
@@ -45,6 +53,7 @@ public class PlacementRegister : MonoBehaviour {
         {
             float floatCoordinate = vector3Coordinates[i];
             int coordinate = Mathf.RoundToInt(floatCoordinate);
+            
             if (coordinate >= 0)
             {
                 stringCoordinates += "+" + coordinate.ToString("D3");

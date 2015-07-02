@@ -5,16 +5,27 @@ public class PlayerController : MonoBehaviour {
 
     public float speed;
     public Transform camera1;
+    public GameObject cubeOutline;
+    public GameObject staticWorld;
 
-    private Rigidbody rb;
-    private RightClick rightClick;
-    private LeftClick leftClick;
+    Rigidbody rb;
+    RightClick rightClick;
+    LeftClick leftClick;
+    GameObject cubeOutlineReference;
+    PlacementRegister placementRegister;
+    PlayerInventory playerInventory;
+    SignalRegister signalRegister;
+
+    string lastCubeOutlinePosition;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rightClick = gameObject.GetComponent<RightClick>();
         leftClick = gameObject.GetComponent<LeftClick>();
+        playerInventory = gameObject.GetComponent<PlayerInventory>();
+        placementRegister = staticWorld.GetComponent<PlacementRegister>();
+        signalRegister = staticWorld.GetComponent<SignalRegister>();
     }
 
     void FixedUpdate()
@@ -31,33 +42,76 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        // Checks for right click and hands off clicked object (hitInfo) to RightClick.cs.
-        if (Input.GetMouseButtonDown(1))
+        // Sends out ray to where cursor is pointed and returns hitInfo.
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitInfo;
+
+        if (Physics.Raycast(ray, out hitInfo, 7))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
+            // Draws cube outlining current where cursor is pointing if in range.
+            GameObject hitObject = hitInfo.collider.gameObject;
 
-            Debug.DrawRay(ray.origin, ray.direction, Color.red, 10f);
+            string cursorCube = placementRegister.CoordinatesVector3ToString(hitObject.transform.position);
 
-            if (Physics.Raycast(ray, out hitInfo, 100)) //100 == max distance 
+            if (cursorCube != lastCubeOutlinePosition)
             {
-                
-                rightClick.RightClickHandler(hitInfo);
+                Destroy(cubeOutlineReference);
+                cubeOutlineReference = Instantiate(cubeOutline, hitObject.transform.position, Quaternion.identity) as GameObject;
+                lastCubeOutlinePosition = cursorCube;
+            }
+
+            // Checks for right click and hands off clicked object (hitInfo) to RightClick.cs.
+            if (Input.GetMouseButton(1))
+            {
+                Debug.DrawRay(ray.origin, ray.direction, Color.red, 10f);
+
+                if (Physics.Raycast(ray, out hitInfo, 100)) //100 == max distance 
+                {
+
+                    rightClick.RightClickHandler(hitInfo);
+                }
+            }
+
+            // Checks for left click and hands off clicked object (hitInfo) to LeftClick.cs.
+            if (Input.GetMouseButton(0))
+            {
+                Debug.DrawRay(ray.origin, ray.direction, Color.red, 10f);
+
+                if (Physics.Raycast(ray, out hitInfo, 100))
+                {
+                    leftClick.LeftClickHandler(hitInfo);
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                Vector3 clickedObjectPosition = hitInfo.collider.transform.position;
+                string clickedCubeCoordinates = placementRegister.CoordinatesVector3ToString(clickedObjectPosition);
+                if (placementRegister.coordinatesIDDictionary.ContainsKey(clickedCubeCoordinates))
+                {
+                    GameObject clickedObjectReference = placementRegister.ObjectLookupByCoordinateString(clickedCubeCoordinates);
+                    if (clickedObjectReference.tag.Contains("Conductive"))
+                    {
+                        print("Pulsing conductive object");
+                        signalRegister.PulseSignal(clickedCubeCoordinates, clickedObjectReference);
+                    }
+                }
             }
         }
-
-        // Checks for left click and hands off clicked object (hitInfo) to LeftClick.cs.
-        if (Input.GetMouseButtonDown(0)) 
+        else
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
+            // Destroys cube outline if cursor is pointing at object out of range.
+            Destroy(cubeOutlineReference);
+        }
 
-            Debug.DrawRay(ray.origin, ray.direction, Color.red, 10f);
+        if (Input.GetKeyDown(KeyCode.LeftBracket))
+        {
+            playerInventory.CycleBackpackSelection("backward");
+        }
 
-            if (Physics.Raycast(ray, out hitInfo, 100))
-            {
-                leftClick.LeftClickHandler(hitInfo);
-            }
+        if (Input.GetKeyDown(KeyCode.RightBracket))
+        {
+            playerInventory.CycleBackpackSelection("forward");
         }
     }
 }

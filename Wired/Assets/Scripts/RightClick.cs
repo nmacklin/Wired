@@ -4,43 +4,62 @@ using System.Collections.Generic;
 
 
 public class RightClick : MonoBehaviour {
-    public GameObject terrain;
+    public GameObject staticWorld;
 
     string clickedCubeCoordinates;
+    float timeAtLastPlacement;
+
     PlacementRegister placementRegister;
-    WirePlacement wirePlacement;
+    ObjectPlacement objectPlacement;
+    PlayerInventory playerInventory;
 
     void Awake()
     {
-        // Gets PlacementRegister.cs script from terrain GameObject and wirePlacement.cs script.
-        placementRegister = terrain.GetComponent<PlacementRegister>();
-        wirePlacement = gameObject.GetComponent<WirePlacement>();
-    }
-
-    public bool ValidPlacement()
-    {
-        // Checks to see if object already registered in PlacementRegister at clicked integer coordinates.
-        return !(placementRegister.coordinatesIDDictionary.ContainsKey(clickedCubeCoordinates));
+        // Gets appropriate scripts.
+        placementRegister = staticWorld.GetComponent<PlacementRegister>();
+        objectPlacement = gameObject.GetComponent<ObjectPlacement>();
+        playerInventory = gameObject.GetComponent<PlayerInventory>();
     }
 
     public void RightClickHandler(RaycastHit hitInfo)
     {
         // Creates string of clicked integer coordinates (see PlacementRegister.cs for method).
-        clickedCubeCoordinates = placementRegister.CoordinatesVector3ToString(hitInfo.point);
+        clickedCubeCoordinates = placementRegister.CoordinatesVector3ToString(hitInfo.collider.gameObject.transform.position);
 
-        // Instantiates GameObject at clicked coordinates and registers placement in PlacementRegister. 
+        // Instantiates GameObject at clicked coordinates and registers placement in object register. 
         // Then destroys and re-instantiates adjacent wires to accomodate new connections.
-        if (ValidPlacement())
+        if (Time.time - timeAtLastPlacement > 0.2f)
         {
-            Vector3 placementPosition = placementRegister.CoordinatesStringToVector3(clickedCubeCoordinates);
-            Dictionary<Vector3, int> adjacentObjects = wirePlacement.WirePlacementMain(placementPosition);
-            foreach (Vector3 adjacentObject in adjacentObjects.Keys)
-            {
-                string objectCoordinateString = placementRegister.CoordinatesVector3ToString(adjacentObject);
+            // Temporary backpack selection code
+            int backpackSelection = playerInventory.GetBackpackSelection();
 
-                Destroy(placementRegister.placedObjectsDictionary[placementRegister.coordinatesIDDictionary[objectCoordinateString]]);
-                placementRegister.RemoveFromObjectRegister(objectCoordinateString);
-                wirePlacement.WirePlacementMain(adjacentObject);
+            Dictionary<string, int> adjacentObjects = objectPlacement.ObjectPlacementMain(hitInfo, clickedCubeCoordinates, backpackSelection, null);
+
+            if (adjacentObjects != null)
+            {
+                foreach (string adjacentObject in adjacentObjects.Keys)
+                {
+                    GameObject adjacentObjectReference = placementRegister.ObjectLookupByCoordinateString(adjacentObject);
+                    if (adjacentObjectReference.tag.Contains("Mutable"))
+                    {
+                        Conductor adjacentConductor = adjacentObjectReference.GetComponent<Conductor>();
+                        List<object> persistentValues = new List<object>();
+                        if (adjacentConductor != null)
+                        {
+                            print("VALUES PERSISTING!!!!");
+                            persistentValues.Add(adjacentConductor.containsSignal);
+                            persistentValues.Add(adjacentConductor.signalStrength);
+                            persistentValues.Add(adjacentConductor.emissionIntensity);
+                            persistentValues.Add(adjacentConductor.GetSignalOriginCoordinates());
+                            print("SIGNAL ORIGIN COORDINATES ADDED: " + adjacentConductor.GetSignalOriginCoordinates());
+                        }
+                        Destroy(placementRegister.ObjectLookupByCoordinateString(adjacentObject));
+                        placementRegister.RemoveFromObjectRegister(adjacentObject);
+                        objectPlacement.ObjectPlacementMain(hitInfo, adjacentObject, 99, persistentValues);
+                    }
+
+                }
+                timeAtLastPlacement = Time.time;
             }
         }
         else

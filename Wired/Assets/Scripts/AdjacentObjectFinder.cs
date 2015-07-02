@@ -4,46 +4,47 @@ using System.Collections.Generic;
 
 public class AdjacentObjectFinder : MonoBehaviour
 {
-    public GameObject terrain;
-
     PlacementRegister placementRegister;
 
     void Awake()
     {
-        placementRegister = terrain.GetComponent<PlacementRegister>();
+        placementRegister = gameObject.GetComponent<PlacementRegister>();
     }
 
-    public Dictionary<Vector3, int> AdjacentObjectFinderMain(Vector3 placementPosition)
+    public Dictionary<string, int> AdjacentObjectFinderMain(string targetPositionString)
     {
-        // Checks orthogonally adjacent coordinates for objects and adds appropriate angle to integer list.
-        Dictionary<Vector3, int> adjacentObjects = new Dictionary<Vector3, int>();
+        // Checks orthogonally adjacent coordinates for objects and adds appropriate Vector3 location and angle to Dictionary.
+        // Only checks in same plane currently, plan to account for above and below in future.
+        Dictionary<string, int> adjacentObjects = new Dictionary<string, int>();
 
-        Vector3 rightCheck = placementPosition;
+        Vector3 targetPosition = placementRegister.CoordinatesStringToVector3(targetPositionString);
+
+        Vector3 rightCheck = targetPosition;
         rightCheck.x += 1;
         if (placementRegister.coordinatesIDDictionary.ContainsKey(placementRegister.CoordinatesVector3ToString(rightCheck)))
         {
-            adjacentObjects.Add(rightCheck, 0);
+            adjacentObjects.Add(placementRegister.CoordinatesVector3ToString(rightCheck), 0);
         }
 
-        Vector3 forwardCheck = placementPosition;
+        Vector3 forwardCheck = targetPosition;
         forwardCheck.z += 1;
         if (placementRegister.coordinatesIDDictionary.ContainsKey(placementRegister.CoordinatesVector3ToString(forwardCheck)))
         {
-            adjacentObjects.Add(forwardCheck, 90);
+            adjacentObjects.Add(placementRegister.CoordinatesVector3ToString(forwardCheck), 90);
         }
 
-        Vector3 leftCheck = placementPosition;
+        Vector3 leftCheck = targetPosition;
         leftCheck.x -= 1;
         if (placementRegister.coordinatesIDDictionary.ContainsKey(placementRegister.CoordinatesVector3ToString(leftCheck)))
         {
-            adjacentObjects.Add(leftCheck, 180);
+            adjacentObjects.Add(placementRegister.CoordinatesVector3ToString(leftCheck), 180);
         }
 
-        Vector3 backCheck = placementPosition;
+        Vector3 backCheck = targetPosition;
         backCheck.z -= 1;
         if (placementRegister.coordinatesIDDictionary.ContainsKey(placementRegister.CoordinatesVector3ToString(backCheck)))
         {
-            adjacentObjects.Add(backCheck, 270);
+            adjacentObjects.Add(placementRegister.CoordinatesVector3ToString(backCheck), 270);
         }
 
         return adjacentObjects;
