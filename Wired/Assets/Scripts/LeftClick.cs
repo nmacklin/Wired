@@ -25,6 +25,7 @@ public class LeftClick : MonoBehaviour {
         // Checks if clicked collider is destructable, then destroys object and removes from Placement Register.
         // Limited to 5 instances of destructions per second.
         string clickedCubeCoordinates = placementRegister.CoordinatesVector3ToString(hitInfo.point);
+        Debug.Log("Left click on: " + clickedCubeCoordinates);
 
         if (hitInfo.collider.gameObject.tag.Contains("Destructable") && (Time.time - timeAtLastRemoval > 0.2f))
         {

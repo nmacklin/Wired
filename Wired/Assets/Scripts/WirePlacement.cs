@@ -22,7 +22,7 @@ public class WirePlacement : MonoBehaviour {
         adjacentObjectFinder = gameObject.GetComponent<AdjacentObjectFinder>();
     }
 
-    public void ObjectPlacement(Vector3 placementPosition, Dictionary<Vector3, int> adjacentObjects)
+    public void ObjectPlacement(Vector3 placementPosition, Dictionary<string, int> adjacentObjects)
     {
         // Takes information about adjacent objects and instantiates appropriate model based on connections necessary.
         // Lots of esoteric math to compensate for unit circle coming around (i.e. 0 != 360).
@@ -76,12 +76,14 @@ public class WirePlacement : MonoBehaviour {
                 break;
         }
 
-        placementRegister.AddToObjectRegister(placementRegister.CoordinatesVector3ToString(placementPosition), objectPlaced);
+        GameObject gameObjectPlaced = objectPlaced as GameObject;
+        placementRegister.AddToObjectRegister(placementRegister.CoordinatesVector3ToString(placementPosition), gameObjectPlaced);
     }
 
-    public Dictionary<Vector3, int> WirePlacementMain(Vector3 placementPosition)
+    public Dictionary<string, int> WirePlacementMain(Vector3 placementPosition)
     {
-        Dictionary<Vector3, int> adjacentObjects = adjacentObjectFinder.AdjacentObjectFinderMain(placementPosition);
+        string placementPositionString = placementRegister.CoordinatesVector3ToString(placementPosition);
+        Dictionary<string, int> adjacentObjects = adjacentObjectFinder.AdjacentObjectFinderMain(placementPositionString);
         ObjectPlacement(placementPosition, adjacentObjects);
         return adjacentObjects;
     }
